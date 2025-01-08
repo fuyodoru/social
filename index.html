@@ -96,6 +96,7 @@
             { id: "me", group: 1, photo: "benn.jpg" },
             { id: "Pelin", group: 2, trait: "Collabration", photo: "pelin.jpg" },
             { id: "Teacher Nuh", group: 3, trait: "Love for Learning", photo: "nuh.jpg" },
+            { id: "Teacher Mehmet", group: 3, trait: "Creativity", photo: "mehmet.jpg" },
             { id: "Teacher Sedat", group: 3, trait: "Confidence", photo: "sedat.jpg" },
             { id: "My Sister", group: 4, trait: "Empathy", photo: "duru.jpg" },
             { id: "My Mother", group: 4, trait: "Resilience", photo: "annem.jpg" },
@@ -106,10 +107,12 @@
 
         const links = [
             { source: "me", target: "Pelin" },
+            { source: "me", target: "Teacher Mehmet" },
             { source: "me", target: "Teacher Nuh" },
             { source: "Pelin", target: "Teacher Nuh" },
             { source: "me", target: "Teacher Sedat" },
             { source: "Teacher Sedat", target: "Teacher Nuh" },
+            { source: "Teacher Mehmet", target: "Teacher Nuh" },
             { source: "me", target: "My Sister" },
             { source: "Teacher Nuh", target: "My Sister" },
             { source: "Pelin", target: "My Sister" },
